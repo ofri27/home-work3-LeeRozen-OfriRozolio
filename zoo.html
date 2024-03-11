@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=DynaPuff:wght@400..700&family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css"/>
+    <title>Zoo</title>
+    <script src="./main.js"></script>
+  </head>
+  <body class="Zoo">
+    <h1 id="Zooh1"> The Zoo </h1>
+          <form id="search-animal-form">
+    
+            <label for="weight">Select Min Weight:</label><br> <!--WEIGHT input-->
+            <input type="text" name="weight" id="weight-input"></input><br> 
+    
+            <label for="height">Select Min Height:</label><br> <!--HEIGHT input-->
+            <input type="text" name="height" id="height-input"></input><br> 
+    
+            <label for="habitat">Select Habitat:</label><br> <!-- HABITAT input -->
+            <input type="radio" name="habitat" value="land">Land</input><br> 
+            <input type="radio" name="habitat" value="sea">Sea</input><br> 
+    
+            <label for="predator">Is Predator?</label> <!-- PREDATOR input -->
+            <input type="radio" name="predator" value="true">Yes</input><br> 
+            <input type="radio" name="predator" value="false">No</input><br> 
+    
+            <label for="animal-name">Search by Name:</label><br> <!-- NAME input -->
+            <input type="search" name="animal-name" id="animal-name-input" placeholder="write here the animal you are looking for"></input><br>
+
+            <!-- COLOR dropdown input -->
+            <label for="colorDropdown">Select Color:</label>
+            <select id="colorDropdown">
+              <option value="all">All Colors</option>
+              <!-- All the color options dynamically added by "create element" method in the JavaScrip, and based on available colors in the animals array -->
+            </select>
+
+            <!-- Button to trigger the search -->
+            <button id="search-btn">Search</button>
+
+            <!--<input type="submit" value="Submit"></input>  בגלל שהפונקציות פועלות ברגע שיש לחיצה או שינוי ולא מתי שלוחצים על חפש, לא צריך כפתור-->
+          </form>    
+          
+          <div id="animal-cards"> </div>
+              
+    <script src="zoo.js"></script>
+  </body>
+</html>
