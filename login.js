@@ -54,6 +54,7 @@ const replaceVisitor = (btn, vis) => {
       const playerChoice = confirm("There is already selected visitor. Are you sure you want to disconnect?");
 
       if (playerChoice) savingSelectedVisitor(vis.name);
+      window.location.href = "zoo.html";
     }
     else savingSelectedVisitor(vis.name); // in case non visitor selected before
   });
@@ -73,6 +74,7 @@ const savingSelectedVisitor = (name) => {
     localStorage.setItem("currentVisitor", JSON.stringify(currentVisitor));
   }
   window.location.href = "zoo.html";
+
 };
 
 
