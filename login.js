@@ -72,7 +72,7 @@ const savingSelectedVisitor = (name) => {
 
     localStorage.setItem("currentVisitor", JSON.stringify(currentVisitor));
   }
-  window.location.href = "/zoo.html";
+  window.location.href = "zoo.html";
 };
 
 
